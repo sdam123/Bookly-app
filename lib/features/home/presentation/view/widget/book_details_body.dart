@@ -215,9 +215,9 @@ class CustomButton extends StatelessWidget {
           CustumTextButton(
              onPressed: () async {
                  Uri uri =Uri.parse(book.volumeInfo.previewLink!);
-                 if (await canLaunchUrl(uri)){
-                  await launchUrl(uri);
-                 }
+                 if (await canLaunchUrl(uri)) {
+                  await launchUrl(uri);          
+                 }           
              },
               text: 'FreePreview',
                 

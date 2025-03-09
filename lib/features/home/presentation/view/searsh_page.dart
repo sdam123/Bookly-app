@@ -1,6 +1,6 @@
 import 'package:bookly_app/core/utils/servise_locator.dart';
 import 'package:bookly_app/features/home/data/repos/home_repo_impl.dart';
-import 'package:bookly_app/features/home/presentation/manager/cubit/search_cubit.dart';
+import 'package:bookly_app/features/home/presentation/manager/search_cubit/search_cubit.dart';
 import 'package:bookly_app/features/home/presentation/view/widget/home_page_body.dart';
 import 'package:bookly_app/styles.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +15,7 @@ class SearshPage extends StatelessWidget {
         child: Scaffold(
       body: BlocProvider(
         create: (context) => SearchCubit(getIt.get<HomeRepoImpl>()),
-        child: SearshBody(),
+        child: const SearshBody(),
       ),
     ));
   }

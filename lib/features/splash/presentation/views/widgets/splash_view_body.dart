@@ -3,7 +3,7 @@
 import 'package:bookly_app/features/home/presentation/view/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:bookly_app/constants.dart';
-import 'package:get/get.dart';
+
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({
     super.key,
@@ -20,7 +20,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
 
  @override
   void initState() {
-    // TODO: implement initState
+   
     super.initState();
     initSlideAnimation();
      navigaToHomePage();
